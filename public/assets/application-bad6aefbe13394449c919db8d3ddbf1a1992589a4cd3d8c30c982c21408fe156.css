@@ -1,0 +1,252 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 20, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 23, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+html {
+  height: 100%;
+}
+
+/* line 27, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+body {
+  height: 100%;
+  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background: -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background: -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background: -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background: linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 37, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 43, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 47, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#notice {
+  text-align: center;
+  font-size: 0.6em;
+  color: #1F7972;
+  font-weight: 100;
+}
+
+/* line 54, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.container {
+  width: 50%;
+  max-width: 750px;
+  background: rgba(250, 250, 250, 0.3);
+  margin: 3em auto 0 auto;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.03);
+  padding: 1em 0;
+}
+
+/* line 65, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.todo_list_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+/* line 72, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.todo_list_title a {
+  text-decoration: none;
+  color: white;
+  transition: all .4s ease-in-out;
+}
+/* line 76, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.todo_list_title a:hover {
+  opacity: 0.4;
+}
+
+/* line 82, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.todo_list_sub_title {
+  margin: 0 0 3em 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #1F7972;
+  font-weight: 100;
+}
+
+/* line 90, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.index_row {
+  padding: 2em;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.3);
+}
+/* line 93, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.index_row .todo_list_sub_title {
+  margin-bottom: 0;
+}
+
+/* line 99, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper .row {
+  width: 100%;
+  border-top: 1px solid rgba(250, 250, 250, 0.3);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.3);
+}
+/* line 103, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper .row .complete {
+  width: 10%;
+  float: left;
+  text-align: center;
+  border-right: 1px solid rgba(250, 250, 250, 0.3);
+  padding: 1em 0;
+}
+/* line 110, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper .row .todo_item {
+  width: 80%;
+  float: left;
+}
+/* line 113, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper .row .todo_item p {
+  margin: 0;
+  padding: 1em;
+  color: #1F7972;
+  font-weight: 100;
+}
+/* line 120, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper .row .trash {
+  width: 10%;
+  float: left;
+  text-align: center;
+  border-left: 1px solid rgba(250, 250, 250, 0.3);
+  padding: 1em 0;
+}
+/* line 127, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper .row i {
+  color: white;
+  transition: all .4s ease-in-out;
+}
+/* line 130, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper .row i:hover {
+  color: #1F7972;
+}
+/* line 135, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper #form {
+  margin-top: 2em;
+  padding: 0 5%;
+}
+/* line 138, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper #form input[type="text"] {
+  width: 72%;
+  margin-right: 2%;
+  display: inline-block;
+  outline: none;
+  background: rgba(250, 250, 250, 0.4);
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  padding: 1em 2em;
+}
+/* line 149, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper #form input[type="submit"] {
+  background: rgba(250, 250, 250, 0.4);
+  outline: none;
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  width: 25%;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+/* line 159, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper #form input[type="submit"]:hover {
+  background: #1F7972;
+}
+/* line 163, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+#todo_items_wrapper #form ::-webkit-input-placeholder {
+  color: #1F7972;
+}
+
+/* line 167, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.links {
+  display: block;
+  margin: 1.5em auto 0 auto;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+/* line 173, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.links a {
+  color: white;
+}
+
+/* line 178, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+.forms {
+  padding: 0 5%;
+}
+
+/* line 181, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+label {
+  color: #1F7972;
+}
+
+/* line 184, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+input[type="text"], textarea {
+  width: 100%;
+  margin: .5em 2% 1em 0;
+  display: inline-block;
+  outline: none;
+  background: rgba(250, 250, 250, 0.4);
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  padding: 1em 2em;
+}
+
+/* line 195, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+textarea {
+  height: 200px;
+}
+
+/* line 198, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+input[type="submit"] {
+  background: white;
+  outline: none;
+  border: none;
+  height: 40px;
+  border-radius: 4px;
+  width: 25%;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  color: #1F7972;
+}
+/* line 209, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+input[type="submit"]:hover {
+  background: #1F7972;
+  color: white;
+}
+
+/* line 214, /home/jay/Documents/rails4new/todo/app/assets/stylesheets/application.css.scss */
+::-webkit-input-placeholder {
+  color: #1F7972;
+}
